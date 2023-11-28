@@ -39,11 +39,11 @@ class InstallChecker {
 	}
 
 	/**
-	 * Get the creation date of the site.
+	 * Get the site's creation/installation date.
 	 *
 	 * @return int
 	 */
-	public function getCreationDate() {
+	public function getInstallationDate() {
 
 		$postTimestamp = get_post_timestamp( $this->getOldestPost()->ID );
 		$userTimestamp = strtotime( $this->getOldestUser()->user_registered );
@@ -54,15 +54,14 @@ class InstallChecker {
 	/**
 	 * Returns the oldest user on the site, based on user ID.
 	 *
-	 * @return WP_User
+	 * @return \WP_User
 	 */
 	protected function getOldestUser() {
-		$query = new WP_User_Query(
+		$query = new \WP_User_Query(
 			[
 				'number'        => 1,
 				'order'         => 'ASC',
 				'orderby'       => 'ID',
-				'fields'        => 'ID',
 				'count_total'   => true,
 				'cache_results' => false,
 			]
@@ -77,7 +76,7 @@ class InstallChecker {
 	 * @return int
 	 */
 	protected function getUserCount() {
-		$query = new WP_User_Query(
+		$query = new \WP_User_Query(
 			[
 				'order'         => 'ASC',
 				'orderby'       => 'ID',
@@ -93,10 +92,10 @@ class InstallChecker {
 	/**
 	 * Returns the oldest post on the site, based on post ID.
 	 *
-	 * @return WP_Post
+	 * @return \WP_Post
 	 */
 	protected function getOldestPost() {
-		$query = new WP_Query(
+		$query = new \WP_Query(
 			[
 				'post_type'           => [ 'post', 'page' ],
 				'post_status'         => 'any',
@@ -116,10 +115,10 @@ class InstallChecker {
 	/**
 	 * Returns the newest post on the site, based on post ID.
 	 *
-	 * @return WP_Post
+	 * @return \WP_Post
 	 */
 	protected function getNewestPost() {
-		$query = new WP_Query(
+		$query = new \WP_Query(
 			[
 				'post_type'           => [ 'post', 'page' ],
 				'post_status'         => 'any',

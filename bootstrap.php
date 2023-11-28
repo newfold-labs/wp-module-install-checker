@@ -21,7 +21,7 @@ if ( function_exists( 'add_action' ) ) {
 				'installationDate',
 				$container->computed(
 					function ( Container $container ) {
-						return $container->get( 'installChecker' )->getCreationDate();
+						return $container->get( 'installChecker' )->getInstallationDate();
 					}
 				)
 			);
