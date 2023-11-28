@@ -1,7 +1,3 @@
-
-
-## Installation
-
 <div style="text-align: center;">
  <a href="https://newfold.com/" target="_blank">
   <img src="https://newfold.com/content/experience-fragments/newfold/site-header/master/_jcr_content/root/header/logo.coreimg.svg/1621395071423/newfold-digital.svg" alt="Newfold Logo" title="Newfold Digital" height="42" />
@@ -10,9 +6,9 @@
 
 # WordPress Install Checker Module
 
-A module responsible for checking a WordPress installation to see if it is a fresh installation or to fetch the site creation date.
+A module that handles checking a WordPress installation to see if it is a fresh install and to fetch the estimated installation date.
 
-This module uses the Newfold Module Loader to register new references into the dependency injection container. Only for use in Newfold brand plugins.
+This module uses the Newfold Module Loader to register new references into the dependency injection container. Only meant for use in Newfold brand plugins.
  
  ## Installation
  
