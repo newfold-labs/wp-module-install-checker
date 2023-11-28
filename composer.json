@@ -1,0 +1,19 @@
+{
+    "name": "newfold-labs/wp-module-install-checker",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "files": [
+            "bootstrap.php"
+        ],
+        "psr-4": {
+            "NewfoldLabs\\WP\\Module\\InstallChecker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Micah Wood",
+            "homepage": "https://wpscholar.com"
+        }
+    ],
+    "require": {}
+}
