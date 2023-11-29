@@ -7,7 +7,7 @@
             "bootstrap.php"
         ],
         "psr-4": {
-            "NewfoldLabs\\WP\\Module\\InstallChecker\\": "src/"
+            "NewfoldLabs\\WP\\Module\\InstallChecker\\": "includes/"
         }
     },
     "authors": [
