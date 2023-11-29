@@ -1,8 +1,10 @@
 name: Trigger Satis Build
+
 on:
   release:
     types:
       - created
+
 jobs:
   webhook:
     name: Send Webhook
@@ -13,7 +15,7 @@ jobs:
         id: package
         env:
           REPO: ${{ github.repository }}
-        run: echo ::set-output name=PACKAGE::${REPO##*/}
+        run: echo "PACKAGE=${REPO##*/}" >> $GITHUB_OUTPUT
 
       - name: Set Version
         id: tag
