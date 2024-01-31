@@ -95,19 +95,24 @@ class InstallChecker {
 	 * @return \WP_Post
 	 */
 	protected function getOldestPost() {
-		$query = new \WP_Query(
-			[
-				'post_type'           => [ 'post', 'page' ],
-				'post_status'         => 'any',
-				'orderby'             => 'ID',
-				'order'               => 'ASC',
-				'posts_per_page'      => 1,
-				'ignore_sticky_posts' => true,
-				'no_found_rows'       => true,
-				'cache_results'       => false,
-				'suppress_filters'    => true,
-			]
-		);
+
+		$args = [
+			'post_type'           => [ 'post', 'page' ],
+			'post_status'         => 'any',
+			'orderby'             => 'ID',
+			'order'               => 'ASC',
+			'posts_per_page'      => 1,
+			'ignore_sticky_posts' => true,
+			'no_found_rows'       => true,
+			'cache_results'       => false,
+			'suppress_filters'    => true,
+		];
+
+		if ( WooCommerce::isWooCommerce() ) {
+			$args['post__not_in'] = WooCommerce::getAllPageIds();
+		}
+
+		$query = new \WP_Query( $args );
 
 		return $query->post;
 	}
@@ -118,19 +123,24 @@ class InstallChecker {
 	 * @return \WP_Post
 	 */
 	protected function getNewestPost() {
-		$query = new \WP_Query(
-			[
-				'post_type'           => [ 'post', 'page' ],
-				'post_status'         => 'any',
-				'orderby'             => 'ID',
-				'order'               => 'DESC',
-				'posts_per_page'      => 1,
-				'ignore_sticky_posts' => true,
-				'no_found_rows'       => true,
-				'cache_results'       => false,
-				'suppress_filters'    => true,
-			]
-		);
+
+		$args = [
+			'post_type'           => [ 'post', 'page' ],
+			'post_status'         => 'any',
+			'orderby'             => 'ID',
+			'order'               => 'DESC',
+			'posts_per_page'      => 1,
+			'ignore_sticky_posts' => true,
+			'no_found_rows'       => true,
+			'cache_results'       => false,
+			'suppress_filters'    => true,
+		];
+
+		if ( WooCommerce::isWooCommerce() ) {
+			$args['post__not_in'] = WooCommerce::getAllPageIds();
+		}
+
+		$query = new \WP_Query( $args );
 
 		return $query->post;
 	}
