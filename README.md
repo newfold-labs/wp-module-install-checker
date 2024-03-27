@@ -9,6 +9,16 @@
 A module that handles checking a WordPress installation to see if it is a fresh install and to fetch the estimated installation date.
 
 This module uses the Newfold Module Loader to register new references into the dependency injection container. Only meant for use in Newfold brand plugins.
+
+## Module Responsibilities
+
+- Provides a way to check if a WordPress install is fresh, meaning no posts, pages, or users were created manually.
+- Provides a way to get the creation/installation date for a WordPress site.
+
+## Critical Paths
+
+- Ensure that a newly created site that hasn't been touched passes the `isFreshInstallation()` check.
+- Ensure that a newly created site with WooCommerce installed passes the `isFreshInstallation()` check.
  
  ## Installation
  
