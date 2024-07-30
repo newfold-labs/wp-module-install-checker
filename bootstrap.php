@@ -4,6 +4,10 @@ use NewfoldLabs\WP\Module\InstallChecker\InstallChecker;
 use NewfoldLabs\WP\ModuleLoader\Container;
 
 if ( function_exists( 'add_action' ) ) {
+	add_action( 'wp_loaded', 'initializeContainer' ); //Ensure the method runs only after WordPress initialization
+}
+
+function initializeContainer() {
 	add_action(
 		'newfold_container_set',
 		function ( Container $container ) {
