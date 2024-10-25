@@ -26,14 +26,16 @@ if ( function_exists( 'add_action' ) ) {
 				)
 			);
 
-			$container->set(
-				'isFreshInstallation',
-				$container->computed(
-					function ( Container $container ) {
-						return $container->get( 'installChecker' )->isFreshInstallation();
-					}
-				)
-			);
+			add_action('plugins_loaded', function() use ($container) {
+				$container->set(
+					'isFreshInstallation',
+					$container->computed(
+						function ( Container $container ) {
+							return $container->get( 'installChecker' )->isFreshInstallation();
+						}
+					)
+				);
+			});
 
 		},
 		0
