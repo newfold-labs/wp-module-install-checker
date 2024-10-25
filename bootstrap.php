@@ -26,7 +26,7 @@ if ( function_exists( 'add_action' ) ) {
 				)
 			);
 
-			add_action('plugins_loaded', function() use ($container) {
+			add_action( 'plugins_loaded', function() use ( $container ) {
 				$container->set(
 					'isFreshInstallation',
 					$container->computed(
