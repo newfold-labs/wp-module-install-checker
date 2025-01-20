@@ -9,7 +9,8 @@
     "require-dev": {
         "johnpbloch/wordpress": "6.1.7",
         "lucatume/wp-browser": "*",
-        "phpunit/phpcov": "*"
+        "phpunit/phpcov": "*",
+        "wpackagist-plugin/woocommerce": "^9.5"
     },
     "repositories": {
         "outlandishideas/wpackagist": {
