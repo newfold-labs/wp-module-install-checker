@@ -2,6 +2,8 @@
 
 namespace NewfoldLabs\WP\Module\InstallChecker;
 
+use Mockery;
+
 /**
  * @coversDefaultClass \NewfoldLabs\WP\Module\InstallChecker\InstallChecker
  */
@@ -13,7 +15,7 @@ class InstallCheckerWPUnitTest extends \lucatume\WPBrowser\TestCase\WPTestCase {
 	protected function setUp(): void {
 		parent::setUp();
 		global $wpdb;
-		if ( ! get_post(1) ) {
+		if( ! get_post(1) ) {
 			$wpdb->insert(
 				$wpdb->posts,
 				array(
@@ -29,32 +31,45 @@ class InstallCheckerWPUnitTest extends \lucatume\WPBrowser\TestCase\WPTestCase {
 	 */
 	public function test_is_fresh_installation() :void
 	{
-		$install_checker = new InstallChecker();
+		$fresh = new InstallChecker();
 		
-		$val = $install_checker->isFreshInstallation();
 		
-		self::assertTrue( $val, 'is not a fresh installation');
+		self::assertTrue( $fresh->isFreshInstallation() );
 	}
 	
-	public function test_is_not_a_fresh_installation() :void
+	public function test_is_not_a_fresh_installation_by_post() :void
 	{
-		self::factory()->post->create( array(
-			'post_title'   => 'Mock Post Title',
-			'post_content' => 'This is a mock post content.',
-		) );
+		self::factory()->post->create(
+			array(
+				'post_title'   => 'Mock Post Title',
+				'post_content' => 'This is a mock post content.',
+			)
+		);
+		$fresh = new InstallChecker();
 		
-		$install_checker = new InstallChecker();
-		
-		$val = $install_checker->isFreshInstallation();
-		
-		self::assertFalse( $val, 'is a fresh installation');
+		self::assertFalse( $fresh->isFreshInstallation() );
 	}
+	
+	public function test_is_not_a_fresh_installation_by_users() :void
+	{
+		self::factory()->user->create( array(
+			'user_login'    => 'testuser',
+			'user_email'    => 'testuser@example.com',
+			'user_pass'     => 'password123',
+			'role'          => 'editor',
+		) );
+		$fresh = new InstallChecker();
+		
+		self::assertFalse( $fresh->isFreshInstallation() );
+	}
+	
 	
 	/**
 	 * @return void
 	 */
 	public function tearDown(): void
 	{
+		Mockery::close();
 		parent::tearDown();
 	}
 	

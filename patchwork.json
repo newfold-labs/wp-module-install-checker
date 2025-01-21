@@ -1,9 +1,0 @@
-{
-  "redefinable-internals": [
-    "defined",
-    "constant",
-    "file_get_contents",
-    "function_exists",
-    "time"
-  ]
-}
