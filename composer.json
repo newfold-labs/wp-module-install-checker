@@ -10,7 +10,8 @@
         "johnpbloch/wordpress": "6.1.7",
         "lucatume/wp-browser": "*",
         "phpunit/phpcov": "*",
-        "wpackagist-plugin/woocommerce": "^9.5"
+        "wpackagist-plugin/woocommerce": "^9.5",
+        "10up/wp_mock": "^0.4.2"
     },
     "repositories": {
         "outlandishideas/wpackagist": {
@@ -31,5 +32,10 @@
     "scripts-descriptions": {
         "test": "Run tests.",
         "test-coverage": "Run tests with coverage, merge coverage and create HTML report."
-    }
+    },
+    "autoload": {
+      "psr-4": {
+        "NewfoldLabs\\WP\\Module\\InstallChecker\\": "includes/"
+      }
+  }
 }

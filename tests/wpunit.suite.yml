@@ -16,7 +16,7 @@ modules:
 
         domain: "%TEST_SITE_WP_DOMAIN%"
         adminEmail: "%TEST_SITE_ADMIN_EMAIL%"
-        title: "wp-module-data"
+        title: "wp-module-install-checker"
         plugins: []
         activatePlugins: []
 

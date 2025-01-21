@@ -27,5 +27,4 @@ class WooCommerce {
 			wc_get_page_id( 'refund_returns' ),
 		];
 	}
-
 }
