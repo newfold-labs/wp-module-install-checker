@@ -4,9 +4,13 @@
         "allow-plugins": {
             "composer/installers": true,
             "johnpbloch/wordpress-core-installer": true
+        },
+        "platform": {
+            "php": "7.3"
         }
     },
     "require-dev": {
+        "php": ">=7.3",
         "johnpbloch/wordpress": "6.1.7",
         "lucatume/wp-browser": "*",
         "phpunit/phpcov": "*",
