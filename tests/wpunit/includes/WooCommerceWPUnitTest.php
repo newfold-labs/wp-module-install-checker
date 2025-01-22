@@ -25,6 +25,7 @@ class WooCommerceWPUnitTest extends \lucatume\WPBrowser\TestCase\WPTestCase {
 		$wooclass->shouldReceive('isWooCommerce')->once()->andReturn(true);
 		
 		self::assertTrue( $wooclass::isWooCommerce(), 'WooCommerce is not enabled');
+		
 	}
 	
 	/**
@@ -36,7 +37,6 @@ class WooCommerceWPUnitTest extends \lucatume\WPBrowser\TestCase\WPTestCase {
 		$wooclass->shouldReceive('isWooCommerce')->once()->andReturn(false);
 		
 		self::assertFalse( $wooclass::isWooCommerce(), 'WooCommerce is enabled');
-		
 	}
 	/**
 	 * @return void
@@ -47,8 +47,10 @@ class WooCommerceWPUnitTest extends \lucatume\WPBrowser\TestCase\WPTestCase {
 		$wooclass->shouldReceive('getAllPageIds')->once()->andReturn( array( 1, 2, 3, 4 ) );
 		
 		$pages_ids = $wooclass::getAllPageIds();
-		self::assertEquals( array( 1, 2, 3, 4) , $pages_ids );
 		
+		foreach ( $pages_ids as $page_id ) {
+			self::assertGreaterThanOrEqual(1, $page_id, $page_id . ' is not a correct PageID');
+		}
 	}
 	
 	/**

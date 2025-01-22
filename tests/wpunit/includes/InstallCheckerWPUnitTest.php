@@ -2,8 +2,6 @@
 
 namespace NewfoldLabs\WP\Module\InstallChecker;
 
-use Mockery;
-
 /**
  * @coversDefaultClass \NewfoldLabs\WP\Module\InstallChecker\InstallChecker
  */
@@ -69,7 +67,6 @@ class InstallCheckerWPUnitTest extends \lucatume\WPBrowser\TestCase\WPTestCase {
 	 */
 	public function tearDown(): void
 	{
-		Mockery::close();
 		parent::tearDown();
 	}
 	
