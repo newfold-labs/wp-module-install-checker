@@ -60,14 +60,4 @@ class InstallCheckerWPUnitTest extends \lucatume\WPBrowser\TestCase\WPTestCase {
 		
 		self::assertFalse( $fresh->isFreshInstallation() );
 	}
-	
-	
-	/**
-	 * @return void
-	 */
-	public function tearDown(): void
-	{
-		parent::tearDown();
-	}
-	
 }

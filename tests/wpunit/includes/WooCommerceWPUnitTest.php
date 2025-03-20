@@ -21,45 +21,25 @@ class WooCommerceWPUnitTest extends \lucatume\WPBrowser\TestCase\WPTestCase {
 	 */
 	public function test_is_woocommerce() :void
 	{
-		$wooclass   = Mockery::mock( WooCommerce::class );
-		$wooclass->shouldReceive('isWooCommerce')->once()->andReturn(true);
+		$wooclass   = WooCommerce::class;
+		$this->assertTrue( $wooclass::isWooCommerce(), 'WooCommerce is not enabled');
 		
-		self::assertTrue( $wooclass::isWooCommerce(), 'WooCommerce is not enabled');
-		
-	}
-	
-	/**
-	 * @return void
-	 */
-	public function test_is_not_woocommerce() :void
-	{
-		$wooclass   = Mockery::mock( WooCommerce::class );
-		$wooclass->shouldReceive('isWooCommerce')->once()->andReturn(false);
-		
-		self::assertFalse( $wooclass::isWooCommerce(), 'WooCommerce is enabled');
 	}
 	/**
 	 * @return void
 	 */
 	public function test_get_all_pages_ids() :void {
 		
-		$wooclass   = Mockery::mock( WooCommerce::class );
-		$wooclass->shouldReceive('getAllPageIds')->once()->andReturn( array( 1, 2, 3, 4 ) );
-		
-		$pages_ids = $wooclass::getAllPageIds();
-		
-		foreach ( $pages_ids as $page_id ) {
-			self::assertGreaterThanOrEqual(1, $page_id, $page_id . ' is not a correct PageID');
+		$pages = [
+			'shop',
+			'cart',
+			'checkout',
+			'myaccount',
+			'refund_returns',
+		];
+		foreach ( $pages as $page_slug ) {
+			$page_id = wc_get_page_id( $page_slug );
+			$this->assertGreaterThanOrEqual(1, $page_id, $page_slug . ' is not a correct PageID');
 		}
 	}
-	
-	/**
-	 * @return void
-	 */
-	public function tearDown(): void
-	{
-		Mockery::close();
-		parent::tearDown();
-	}
-	
 }
