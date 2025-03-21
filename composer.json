@@ -30,7 +30,8 @@
         "johnpbloch/wordpress": "6.1.7",
         "lucatume/wp-browser": "*",
         "phpunit/phpcov": "*",
-        "wpackagist-plugin/woocommerce": "7.0"
+        "wpackagist-plugin/woocommerce": "7.0",
+        "wpackagist-theme/twentysixteen": "*"
     },
     "repositories": {
         "outlandishideas/wpackagist": {
