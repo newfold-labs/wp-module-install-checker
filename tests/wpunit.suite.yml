@@ -21,4 +21,5 @@ modules:
         activatePlugins: ["woocommerce/woocommerce.php"]
 
         WP_HTTP_BLOCK_EXTERNAL: true
+        WP_CONTENT_DIR: "wp-content"
 bootstrap: _bootstrap.php
