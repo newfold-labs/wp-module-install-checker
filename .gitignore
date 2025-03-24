@@ -6,3 +6,4 @@
 /vendor/
 /wordpress
 /wp-content
+.DS_Store

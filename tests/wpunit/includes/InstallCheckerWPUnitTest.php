@@ -32,7 +32,7 @@ class InstallCheckerWPUnitTest extends \lucatume\WPBrowser\TestCase\WPTestCase {
 		$fresh = new InstallChecker();
 		
 		
-		self::assertTrue( $fresh->isFreshInstallation() );
+		$this->assertTrue( $fresh->isFreshInstallation() );
 	}
 	
 	public function test_is_not_a_fresh_installation_by_post() :void
@@ -45,7 +45,7 @@ class InstallCheckerWPUnitTest extends \lucatume\WPBrowser\TestCase\WPTestCase {
 		);
 		$fresh = new InstallChecker();
 		
-		self::assertFalse( $fresh->isFreshInstallation() );
+		$this->assertFalse( $fresh->isFreshInstallation() );
 	}
 	
 	public function test_is_not_a_fresh_installation_by_users() :void
@@ -58,6 +58,6 @@ class InstallCheckerWPUnitTest extends \lucatume\WPBrowser\TestCase\WPTestCase {
 		) );
 		$fresh = new InstallChecker();
 		
-		self::assertFalse( $fresh->isFreshInstallation() );
+		$this->assertFalse( $fresh->isFreshInstallation() );
 	}
 }
