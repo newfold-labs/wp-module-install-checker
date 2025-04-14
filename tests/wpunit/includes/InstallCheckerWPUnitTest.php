@@ -10,10 +10,10 @@ class InstallCheckerWPUnitTest extends \lucatume\WPBrowser\TestCase\WPTestCase {
 	/**
 	 * @return void
 	 */
-	protected function setUp(): void {
-		parent::setUp();
-		global $wpdb;
+	public function test_is_fresh_installation() :void
+	{
 		if( ! get_post(1) ) {
+			global $wpdb;
 			$wpdb->insert(
 				$wpdb->posts,
 				array(
@@ -22,13 +22,7 @@ class InstallCheckerWPUnitTest extends \lucatume\WPBrowser\TestCase\WPTestCase {
 				)
 			);
 		}
-	}
-	
-	/**
-	 * @return void
-	 */
-	public function test_is_fresh_installation() :void
-	{
+		
 		$fresh = new InstallChecker();
 		
 		
@@ -37,6 +31,17 @@ class InstallCheckerWPUnitTest extends \lucatume\WPBrowser\TestCase\WPTestCase {
 	
 	public function test_is_not_a_fresh_installation_by_post() :void
 	{
+		if( ! get_post(1) ) {
+			global $wpdb;
+			$wpdb->insert(
+				$wpdb->posts,
+				array(
+					'ID'         => 1,
+					'post_title' => 'Post 1',
+				)
+			);
+		}
+		
 		self::factory()->post->create(
 			array(
 				'post_title'   => 'Mock Post Title',
