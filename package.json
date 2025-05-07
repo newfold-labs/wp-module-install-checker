@@ -1,0 +1,7 @@
+{
+  "name": "wp-module-install-checker",
+  "version": "1.0.3",
+  "devDependencies": {
+    "@wordpress/env": "^10.16.0"
+  }
+}
