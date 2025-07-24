@@ -5246,15 +5246,15 @@
         },
         {
             "name": "wpackagist-plugin/woocommerce",
-            "version": "9.8.1",
+            "version": "10.0.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce/",
-                "reference": "tags/9.8.1"
+                "reference": "tags/10.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce.9.8.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.10.0.4.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -5284,12 +5284,11 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "johnpbloch/wordpress": 0,
-        "wpackagist-plugin/woocommerce": 0
+        "johnpbloch/wordpress": 0
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {},
     "platform-dev": {
         "php": ">=7.3"
     },
