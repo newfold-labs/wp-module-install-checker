@@ -5264,15 +5264,15 @@
         },
         {
             "name": "wpackagist-theme/twentysixteen",
-            "version": "3.4",
+            "version": "3.6",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/twentysixteen/",
-                "reference": "3.4"
+                "reference": "3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentysixteen.3.4.zip"
+                "url": "https://downloads.wordpress.org/theme/twentysixteen.3.6.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
