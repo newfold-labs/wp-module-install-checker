@@ -12,6 +12,11 @@ class InstallChecker {
 	 */
 	public function isFreshInstallation() {
 
+		// If this is a staging site, never treat it as fresh installation
+    	if ( 'staging' === get_option( 'staging_environment', 'production' ) ) {
+        	return false;
+    	}
+
 		$oldestPost = $this->getOldestPost();
 		$newestPost = $this->getNewestPost();
 
