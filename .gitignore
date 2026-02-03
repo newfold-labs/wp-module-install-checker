@@ -7,3 +7,4 @@
 /wordpress
 /wp-content
 .DS_Store
+.env.testing
