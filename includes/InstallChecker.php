@@ -35,6 +35,11 @@ class InstallChecker {
 			return false;
 		}
 
+		// If the site is a staging site, this isn't a fresh installation.
+		if ( 'staging' === get_option( 'staging_environment', 'production' ) ) {
+			return false;
+		}
+
 		return true;
 	}
 
