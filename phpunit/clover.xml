@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1774465233">
-  <project timestamp="1774465233">
+<coverage generated="1774465270">
+  <project timestamp="1774465270">
     <file name="/home/runner/work/wp-module-install-checker/wp-module-install-checker/includes/InstallChecker.php">
       <class name="NewfoldLabs\WP\Module\InstallChecker\InstallChecker" namespace="global">
         <metrics complexity="14" methods="6" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="66" coveredstatements="60" elements="72" coveredelements="64"/>
