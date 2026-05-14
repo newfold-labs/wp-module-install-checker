@@ -19,6 +19,7 @@ jobs:
     name: Setup
     runs-on: ubuntu-latest
     permissions: {} # Required: branch name is derived from env only; no checkout or GitHub API use of GITHUB_TOKEN.
+    timeout-minutes: 30
     outputs:
       branch: ${{ steps.extract_branch.outputs.branch }}
     steps:
