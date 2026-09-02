@@ -1,0 +1,198 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://github.com/newfold-labs/wp-module-install-checker/issues\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-02-13T09:55:55+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: wp-module-install-checker\n"
+
+#: wp-content/plugins/woocommerce/assets/client/blocks/coming-soon/block.json
+msgctxt "block title"
+msgid "Coming Soon"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/assets/client/blocks/mini-cart-contents/block.json
+msgctxt "block title"
+msgid "Mini-Cart Contents"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/assets/client/blocks/mini-cart-contents/block.json
+msgctxt "block description"
+msgid "Display a Mini-Cart widget."
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Space size name"
+msgid "1"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Space size name"
+msgid "2"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Space size name"
+msgid "3"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Space size name"
+msgid "4"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Space size name"
+msgid "5"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Space size name"
+msgid "6"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Arial"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Comic Sans MS"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Courier New"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Georgia"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Lucida"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Tahoma"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Times New Roman"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Trebuchet MS"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Verdana"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Arvo"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Lato"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Lora"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Merriweather"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Merriweather Sans"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Noticia Text"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Open Sans"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Playfair Display"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Roboto"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Source Sans Pro"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Oswald"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Raleway"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Permanent Marker"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font family name"
+msgid "Pacifico"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font size name"
+msgid "small"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font size name"
+msgid "medium"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font size name"
+msgid "large"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font size name"
+msgid "extra-large"
+msgstr ""
+
+#: wp-content/plugins/woocommerce/packages/email-editor/src/Engine/theme.json
+msgctxt "Font size name"
+msgid "extra-extra-large"
+msgstr ""
