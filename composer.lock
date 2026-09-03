@@ -5832,15 +5832,15 @@
         },
         {
             "name": "wpackagist-theme/twentysixteen",
-            "version": "3.8",
+            "version": "3.9",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/twentysixteen/",
-                "reference": "3.8"
+                "reference": "3.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentysixteen.3.8.zip"
+                "url": "https://downloads.wordpress.org/theme/twentysixteen.3.9.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
