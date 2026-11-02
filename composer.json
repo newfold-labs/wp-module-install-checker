@@ -31,13 +31,20 @@
         "johnpbloch/wordpress": "@stable",
         "lucatume/wp-browser": "*",
         "phpunit/phpcov": "*",
-        "wpackagist-plugin/woocommerce": "@stable",
-        "wpackagist-theme/twentysixteen": "*"
+        "wp-theme/twentysixteen": "^3.9",
+        "wp-plugin/woocommerce": "^11.2"
     },
     "repositories": {
-        "outlandishideas/wpackagist": {
+        "newfold-labs/*": {
             "type": "composer",
-            "url": "https://wpackagist.org"
+            "url": "https://newfold-labs.github.io/satis/",
+            "only": [
+                "newfold-labs/*"
+            ]
+        },
+        "wp-packages": {
+            "type": "composer",
+            "url": "https://repo.wp-packages.org"
         }
     },
     "scripts": {

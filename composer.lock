@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9245fdbeae39ba37c7e7ee55b63b7f26",
+    "content-hash": "c965cc649b4989ed09432893de81a640",
     "packages": [],
     "packages-dev": [
         {
@@ -5813,25 +5813,38 @@
             "time": "2025-05-07T01:16:12+00:00"
         },
         {
-            "name": "wpackagist-plugin/woocommerce",
-            "version": "11.0.1",
+            "name": "wp-plugin/woocommerce",
+            "version": "11.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce/",
-                "reference": "tags/11.0.1"
+                "reference": "tags/11.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce.11.0.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.11.2.1.zip"
             },
             "require": {
-                "composer/installers": "^1.0 || ^2.0"
+                "composer/installers": "~1.0|~2.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/woocommerce/"
+            "notification-url": "https://wp-packages.org/downloads",
+            "authors": [
+                {
+                    "name": "Automattic"
+                }
+            ],
+            "description": "Everything you need to launch an online store in days and keep it growing for years. From your first sale to millions in revenue, Woo is with you.",
+            "homepage": "https://woocommerce.com/",
+            "support": {
+                "changelog": "https://wordpress.org/plugins/woocommerce/#developers",
+                "issues": "https://wordpress.org/support/plugin/woocommerce",
+                "source": "https://plugins.svn.wordpress.org/woocommerce"
+            },
+            "time": "2026-10-09T15:35:21+00:00"
         },
         {
-            "name": "wpackagist-theme/twentysixteen",
+            "name": "wp-theme/twentysixteen",
             "version": "3.9",
             "source": {
                 "type": "svn",
@@ -5843,10 +5856,18 @@
                 "url": "https://downloads.wordpress.org/theme/twentysixteen.3.9.zip"
             },
             "require": {
-                "composer/installers": "^1.0 || ^2.0"
+                "composer/installers": "~1.0|~2.0"
             },
             "type": "wordpress-theme",
-            "homepage": "https://wordpress.org/themes/twentysixteen/"
+            "notification-url": "https://wp-packages.org/downloads",
+            "description": "Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.",
+            "homepage": "https://wordpress.org/themes/twentysixteen/",
+            "support": {
+                "changelog": "https://wordpress.org/themes/twentysixteen/#developers",
+                "issues": "https://wordpress.org/support/theme/twentysixteen",
+                "source": "https://themes.svn.wordpress.org/twentysixteen"
+            },
+            "time": "2026-09-29T13:03:58+00:00"
         }
     ],
     "aliases": [],
