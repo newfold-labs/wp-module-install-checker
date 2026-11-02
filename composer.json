@@ -28,7 +28,7 @@
     "require-dev": {
         "php": ">=7.3",
         "wp-cli/i18n-command": "^2.7.0",
-        "johnpbloch/wordpress": "@stable",
+        "johnpbloch/wordpress": "^7.1",
         "lucatume/wp-browser": "*",
         "phpunit/phpcov": "*",
         "wp-theme/twentysixteen": "^3.9",
