@@ -22,11 +22,11 @@
             "johnpbloch/wordpress-core-installer": true
         },
         "platform": {
-            "php": "7.3"
+            "php": "7.4"
         }
     },
     "require-dev": {
-        "php": ">=7.3",
+        "php": ">=7.4",
         "wp-cli/i18n-command": "^2.7.0",
         "johnpbloch/wordpress": "^7.1",
         "lucatume/wp-browser": "*",
