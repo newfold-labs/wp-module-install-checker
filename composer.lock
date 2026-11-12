@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe4d765fe5609af7b578789d6b025d82",
+    "content-hash": "bb1a83a471bf4655da03fbe1c9914e7e",
     "packages": [],
     "packages-dev": [
         {
@@ -5814,15 +5814,15 @@
         },
         {
             "name": "wp-plugin/woocommerce",
-            "version": "11.2.2",
+            "version": "11.3.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce/",
-                "reference": "tags/11.2.2"
+                "reference": "tags/11.3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce.11.2.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.11.3.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0|~2.0"
@@ -5841,7 +5841,7 @@
                 "issues": "https://wordpress.org/support/plugin/woocommerce",
                 "source": "https://plugins.svn.wordpress.org/woocommerce"
             },
-            "time": "2026-11-04T21:34:49+00:00"
+            "time": "2026-11-11T16:56:56+00:00"
         },
         {
             "name": "wp-theme/twentysixteen",

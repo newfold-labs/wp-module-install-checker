@@ -32,7 +32,7 @@
         "lucatume/wp-browser": "*",
         "phpunit/phpcov": "*",
         "wp-theme/twentysixteen": "^3.9",
-        "wp-plugin/woocommerce": "^11.2"
+        "wp-plugin/woocommerce": "^11.3"
     },
     "repositories": {
         "newfold-labs/*": {
